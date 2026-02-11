@@ -50,7 +50,7 @@ Compared to manual lookups or one-off scripts, it provides:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-pip install -e .
+pip install -e .```
 
 Run
 lei-enricher
