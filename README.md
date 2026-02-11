@@ -55,14 +55,16 @@ pip install -e .
 ---
 
 ### Run
+```powershell
 lei-enricher
-
+```
 
 If the console command isn’t available, try:
-
+```powershell
 python -m lei_enricher
-
-Using the app (GUI)
+```
+---
+### Using the app (GUI)
 
 Select your Excel/Calc file
 
@@ -72,7 +74,8 @@ Click Start
 
 The app writes output into the next columns (Status / Renewal Date / etc.)
 
-“Enable fallback for misses” — when to use
+---
+### “Enable fallback for misses” — when to use
 
 Enable it only if you want extra coverage when:
 
@@ -82,7 +85,8 @@ you have datasets with occasional formatting/provider edge cases
 
 If GLEIF already resolves everything you care about, keep it off (simpler + fewer requests).
 
-Project structure
+---
+### Project structure
 
 src/lei_enricher/ — application source code
 
@@ -94,17 +98,18 @@ pyproject.toml — packaging + dependencies
 
 Note: Do not commit .venv/ or .pytest_cache/ (local environment + cache).
 
-Troubleshooting
+---
+### Troubleshooting
 
 If PowerShell blocks activation, run:
-
+```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-
+```
 
 If installs fail, confirm Python is in PATH and rerun:
-
+```powershell
 python -m pip install --upgrade pip
-
+```
 License
 
 This project is licensed under the MIT License — see the LICENSE file for details.
