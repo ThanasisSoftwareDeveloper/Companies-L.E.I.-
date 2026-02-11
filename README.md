@@ -66,35 +66,35 @@ python -m lei_enricher
 ---
 ### Using the app (GUI)
 
-Select your Excel/Calc file
+- Select your Excel/Calc file
 
-Choose the sheet (if prompted) and the LEI column
+- Choose the sheet (if prompted) and the LEI column
 
-Click Start
+- Click Start
 
-The app writes output into the next columns (Status / Renewal Date / etc.)
+- The app writes output into the next columns (Status / Renewal Date / etc.)
 
 ---
 ### “Enable fallback for misses” — when to use
 
 Enable it only if you want extra coverage when:
 
-GLEIF returns no result for some LEIs, or
+- GLEIF returns no result for some LEIs, or
 
-you have datasets with occasional formatting/provider edge cases
+- you have datasets with occasional formatting/provider edge cases
 
 If GLEIF already resolves everything you care about, keep it off (simpler + fewer requests).
 
 ---
 ### Project structure
 
-src/lei_enricher/ — application source code
+- src/lei_enricher/ — application source code
 
-tests/ — tests
+- tests/ — tests
 
-pyproject.toml — packaging + dependencies
+- pyproject.toml — packaging + dependencies
 
-.gitignore — excludes local/temporary files
+- .gitignore — excludes local/temporary files
 
 Note: Do not commit .venv/ or .pytest_cache/ (local environment + cache).
 
