@@ -51,3 +51,58 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 pip install -e .
+
+Run
+lei-enricher
+
+
+If the console command isn’t available, try:
+
+python -m lei_enricher
+
+Using the app (GUI)
+
+Select your Excel/Calc file
+
+Choose the sheet (if prompted) and the LEI column
+
+Click Start
+
+The app writes output into the next columns (Status / Renewal Date / etc.)
+
+“Enable fallback for misses” — when to use
+
+Enable it only if you want extra coverage when:
+
+GLEIF returns no result for some LEIs, or
+
+you have datasets with occasional formatting/provider edge cases
+
+If GLEIF already resolves everything you care about, keep it off (simpler + fewer requests).
+
+Project structure
+
+src/lei_enricher/ — application source code
+
+tests/ — tests
+
+pyproject.toml — packaging + dependencies
+
+.gitignore — excludes local/temporary files
+
+Note: Do not commit .venv/ or .pytest_cache/ (local environment + cache).
+
+Troubleshooting
+
+If PowerShell blocks activation, run:
+
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+
+
+If installs fail, confirm Python is in PATH and rerun:
+
+python -m pip install --upgrade pip
+
+License
+
+This project is licensed under the MIT License — see the LICENSE file for details.
