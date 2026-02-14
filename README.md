@@ -56,7 +56,7 @@ pip install -e .
 - Download installer / Run setup
 ---
 
-### Run
+### Run (for developers)
 ```powershell
 lei-enricher
 ```
