@@ -44,7 +44,7 @@ Compared to manual lookups or one-off scripts, it provides:
 - Windows 10/11  
 - Python **3.10+** (recommended **3.11+**)
 
-### Install (PowerShell)
+### Install (PowerShell) for developers
 
 ```powershell
 python -m venv .venv
@@ -52,6 +52,8 @@ python -m venv .venv
 python -m pip install --upgrade pip
 pip install -e .
 ```
+### Install for users (just send DM)
+- Download installer / Run setup
 ---
 
 ### Run
